@@ -8,21 +8,34 @@
     </head>
 
         <body>
-            <h1>Pokemon Interrogation</h1>
-            <p>Welcome to the Pokemon Interrogation Quiz!</p>
-            <p>Test your knowledge and see how well you know the world of Pokemon!</p>
-            <h2>Instructions:</h2>
-            <ol>
-                <li>Click the "Start Quiz" button to begin.</li>
-                <li>You will be given a series of clues about Pokemon, starting with the least revealing moving up to the most revealing.</li>
-                <li>Submit your guess to see your score. The fewer clues you use, the higher your score!</li>
-            </ol>
-            <button id="start-quiz-btn">Start Interrogation</button>
-            <div>
+            <header>
+                <h1>Pokemon Interrogation</h1>
+                <p>Welcome to the Pokemon Interrogation Quiz!</p>
+                <p>Test your knowledge and see how well you know the world of Pokemon!</p>
+                <h2>Instructions:</h2>
+                    <ol>
+                        <li>Click the "Start Quiz" button to begin.</li>
+                        <li>You will be given a series of clues about Pokemon, starting with the least revealing moving up to the most revealing.</li>
+                        <li>Submit your guess to see your score. The fewer clues you use, the higher your score!</li>
+                    </ol> 
+            </header>
+            
+            <main>
+                <button id="start-quiz-btn">Start Interrogation</button>
+                <div>
                 <p>Clue will appear here.</p>
+                <label for="guess-input">Your guess:</label>
                 <input id="guess-input" style="display: block" type="text" placeholder="Enter your guess...">
                 <button id="submit-guess-btn">Submit Guess</button>
-            </div>
+                </div>
+                <p>Your score is:</p>
+                <span id="score-display">0</span> 
+            </main>
+            <footer>
+                <p>Pokemon data provided by PokeAPI.</p>
+                <p>Created by rvndrn. All rights reserved.</p>
+            </footer>
+            
         
         </body>
 </html>
