@@ -1,0 +1,36 @@
+body {
+    background-color: goldenrod;
+    font-family: Arial, sans-serif;
+}
+
+#guess-input {
+    display: block;
+}
+
+img {
+    display: block;
+    margin: 10px auto;
+}
+
+#quiz-card {
+    padding: 20px;
+    border: 2px solid black;
+    margin: 20px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    width: 90%;
+    background-color: #fff8dc;
+}
+
+button {
+    background-color: maroon;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+button:hover {
+    background-color: darkgreen;
+}

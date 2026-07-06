@@ -5,6 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Interro-mon</title>
+        <link rel="stylesheet" href="styles.css">
     </head>
 
         <body>
@@ -14,7 +15,7 @@
                 <p>Test your knowledge and see how well you know the world of Pokemon!</p>
                 <h2>Instructions:</h2>
                     <ol>
-                        <li>Click the "Start Quiz" button to begin.</li>
+                        <li>Click the "Start Interrogation" button to begin.</li>
                         <li>You will be given a series of clues about Pokemon, starting with the least revealing moving up to the most revealing.</li>
                         <li>Submit your guess to see your score. The fewer clues you use, the higher your score!</li>
                     </ol> 
@@ -22,11 +23,11 @@
             
             <main>
                 <button id="start-quiz-btn">Start Interrogation</button>
-                <div>
+                <div id="quiz-card">
                 <p>Clue will appear here.</p>
-                <img src="https://via.placeholder.com/150" alt="Pokemon silhouette clue" style="display: block; margin: 10px auto;">
+                <img src="https://via.placeholder.com/150" alt="Pokemon silhouette clue">
                 <label for="guess-input">Your guess:</label>
-                <input id="guess-input" style="display: block" type="text" placeholder="Enter your guess...">
+                <input id="guess-input" type="text" placeholder="Enter your guess...">
                 <button id="submit-guess-btn">Submit Guess</button>
                 </div>
                 <p>Your score is: <span id="score-display">0</span></p>
