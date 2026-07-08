@@ -21,3 +21,9 @@
 - Actual: page loaded fine, alt text is displayed when the source is invalid/incorrect
 - Steps to reproduce: add an invalid/incorrect source for the image
 - Fix: review the image sources
+
+## Bug 5: Valid guess counted as invalid ones due to missing case sensitivity check
+- Expected: entered guess to match the correct answer irrespective of case
+- Actual: guess considered as incorrect
+- Steps to reproduce: guess an answer in upper or lowercase
+- Fix: add case insensitivity check to the comparison code
