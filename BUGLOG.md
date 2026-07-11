@@ -27,3 +27,15 @@
 - Actual: guess considered as incorrect
 - Steps to reproduce: guess an answer in upper or lowercase
 - Fix: add case insensitivity check to the comparison code
+
+## Bug 6: Displayed/hardcoded data can be wrong based on context
+- Expected: data to be dynamically updated based on the API response
+- Actual: data was hardcoded
+- Steps to reproduce: restart the quiz to see if data gets updated dynamically
+- Fix: retrieve data dynamically from the API
+
+## Bug 7: Delay in the loading of the silhouette on quiz restart
+- Expected: silhouette to refresh quickly without delay
+- Actual: silhouette refresh is delayed
+- Steps to reproduce: restart the quiz after a correct guess, observe the silhouette behaviour
+- Fix: handle the loading of the image/silhouette

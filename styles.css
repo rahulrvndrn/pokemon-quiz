@@ -39,6 +39,11 @@ button:hover {
     background-color: darkgreen;
 }
 
+.silhouette {
+  filter: brightness(0);
+}
+
+
 main {
     display: flex;
     flex-direction: column;
