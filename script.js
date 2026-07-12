@@ -22,7 +22,7 @@ startButton.addEventListener("click", function() {
     fetch(`https://pokeapi.co/api/v2/pokemon/${randomPokemonId}`)
   .then(response => response.json())
   .then(data => {
-    clueText.textContent = `This Pokemon's primary type is ${data.types[0].type.name.toUpperCase()}.`;
+    clueText.innerHTML = `This Pokemon's primary type is ${data.types[0].type.name.toUpperCase().bold()}.`;
     //console.log(data);
     correctAnswer = data.name; // Set the correct answer based on the fetched data
     pokemonImage.src = data.sprites.front_default; // Update the image to the Pokemon's sprite
