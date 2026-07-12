@@ -71,10 +71,9 @@ footer {
     text-align: center;
 }
 
-h1 {
+h1{
   font-family: "Press Start 2P", Arial, sans-serif;
 }
-
 
 hr {
     border: 2px;
@@ -86,15 +85,19 @@ hr {
 
 body {
     background-color: var(--pokedex-red);
-    font-family: Arial, sans-serif;
     color: var(--pokedex-white);
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    font-family: "VT323", Arial, sans-serif;
+    border: 8px solid maroon;
+    margin: 0;
+    padding: 8px;
 }
 
 #guess-input {
     display: block;
+    font-family: inherit;
 }
 
 #pokemon-image {
@@ -138,6 +141,10 @@ button {
     cursor: pointer;
     padding: 10px 20px;
     font-weight: bold;
+    font-size: 16px;
+    font-family: inherit;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 button:hover {
