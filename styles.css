@@ -5,6 +5,53 @@
     --pokedex-accent: #ffcc00;
 }
 
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.2;
+  }
+}
+
+.light.small:last-child {
+  animation: blink 1s infinite;
+}
+
+
+.lights {
+  display: flex;
+  gap: 12px;
+  padding: 15px;
+  align-items: center;
+}
+
+.light {
+  border-radius: 50%;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.6) inset;
+}
+
+.light.big {
+  width: 50px;
+  height: 50px;
+  background-color: dodgerblue;
+  animation: blink 4s infinite;
+}
+
+.light.medium {
+  width: 30px;
+  height: 30px;
+  background-color: seagreen;
+  animation: blink 1s infinite;
+}
+
+.light.small {
+  width: 20px;
+  height: 20px;
+  background-color: var(--pokedex-accent);
+}
+
+
 header {
     background-color: var(--pokedex-black);
     padding: 20px;
@@ -13,15 +60,18 @@ header {
 }
 
 footer {
-    background-color: var(--pokedex-black);
+    background-color: black;
     padding: 10px;
     border-top: 5px solid var(--pokedex-accent);
     border-radius: 8px;
+    margin-top: auto;
+    text-align: center;
 }
 
 hr {
     border: 2px;
     height: 2px;
+    width: 100%;
     background-color: maroon;
     margin: 20px 0;
 }
@@ -30,21 +80,32 @@ body {
     background-color: var(--pokedex-red);
     font-family: Arial, sans-serif;
     color: var(--pokedex-white);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 #guess-input {
     display: block;
 }
 
-img {
+#pokemon-image {
     display: block;
     margin: 10px auto;
     width: 250px;
+    height: auto;
+}
+
+img {
+    display: block;
+    margin: 10px auto;
+    width: 200px;
     height: auto;
     image-rendering: pixelated;
     /*border: 2px solid var(--pokedex-white);
     border-radius: 8px;*/
 }
+
 
 #quiz-card {
     padding: 20px;
@@ -72,7 +133,7 @@ button {
 }
 
 button:hover {
-    background-color: cyan;
+    background-color: dodgerblue;
        
 }
 
