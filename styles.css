@@ -27,7 +27,7 @@
 }
 
 .light {
-  border-radius: 50%;
+  border-radius: 5px;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.6) inset;
 }
 
@@ -35,7 +35,8 @@
   width: 50px;
   height: 50px;
   background-color: dodgerblue;
-  animation: blink 4s infinite;
+  animation: blink 2s infinite;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.6) inset, 0 0 12px dodgerblue;
 }
 
 .light.medium {
@@ -43,12 +44,14 @@
   height: 30px;
   background-color: seagreen;
   animation: blink 1s infinite;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.6) inset, 0 0 12px seagreen;
 }
 
 .light.small {
   width: 20px;
   height: 20px;
   background-color: var(--pokedex-accent);
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.6) inset, 0 0 12px var(--pokedex-accent);
 }
 
 
@@ -67,6 +70,11 @@ footer {
     margin-top: auto;
     text-align: center;
 }
+
+h1 {
+  font-family: "Press Start 2P", Arial, sans-serif;
+}
+
 
 hr {
     border: 2px;
