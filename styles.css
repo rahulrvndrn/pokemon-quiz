@@ -152,6 +152,13 @@ button:hover {
        
 }
 
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  background-color: gray;
+}
+
+
 #guess-input {
     padding: 10px;
     border-radius: 8px;

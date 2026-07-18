@@ -39,3 +39,9 @@
 - Actual: silhouette refresh is delayed
 - Steps to reproduce: restart the quiz after a correct guess, observe the silhouette behaviour
 - Fix: handle the loading of the image/silhouette
+
+## Bug 8: Submit guess button to be disabled/throw error when no guess is provided
+- Expected: submit guess button to throw an error when no guess is submitted
+- Actual: showed the correct guess message
+- Steps to reproduce: click on submit guess wihtout entering a guess input
+- Fix: handle the submit guess flow to throw error when no guess is submitted

@@ -51,7 +51,13 @@ function startNewRound() {
 }
 
 function checkGuess() {
-    if (guessInput.value.toLowerCase() === correctAnswer.toLowerCase()) {
+
+    if (guessInput.value.trim() === "") {
+        clueText.textContent = "Please enter a guess first!";
+        return;
+}
+
+    if (guessInput.value.trim().toLowerCase() === correctAnswer.toLowerCase()) {
         pokemonImage.classList.remove("silhouette"); // Reveal the Pokemon image
         console.log("Correct guess!");
         clueText.innerHTML = `Correct!!! It's ${correctAnswer.toUpperCase().bold()}.`;
